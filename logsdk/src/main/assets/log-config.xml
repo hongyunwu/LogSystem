@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log-configuration
+    >
+    <!--版本号-->
+    <log-version version='1.0'/>
+    <!--日志level-->
+    <log-level level="VERBOSE"/>
+    <!--统一前缀-->
+    <log-prefix prefix='why_log'/>
+    <!--日志本地化配置-->
+    <log-writer writable='true'>
+        <time-format>HH时mm分ss秒-SSS</time-format>
+        <!--文件配置-->
+        <file>
+
+            <!--相对文件路径-->
+            <path>why_log</path>
+            <!--文件全名-->
+            <name></name>
+            <!--文件最大存储值-->
+            <maxsize>100</maxsize>
+            <!--文件创建时间格式date-format-->
+            <date-format>yyyy年MM月dd日</date-format>
+            <!--文件过期时间-->
+            <expire-time>3</expire-time>
+        </file>
+    </log-writer>
+    <!--需要过滤的列表,如果range为all则不需要解析里边，如果为list，则需要解析filter-list-->
+    <log-filter range='all'>
+
+        <filter-list>
+        </filter-list>
+    </log-filter>
+
+
+</log-configuration>
